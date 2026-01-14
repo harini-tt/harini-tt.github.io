@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    background: #f5f0e8;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 50px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 60px;
+}
+
+nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #888;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    color: #c97b84;
+}
+
+nav a.active {
+    color: #333;
+}
+
+/* Main content */
+main {
+    background: #fff;
+    padding: 40px;
+}
+
+main h1 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Home page intro */
+.intro {
+
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.bio h1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    margin-bottom: 16px;
+    color: #555;
+}
+
+.bio p a {
+    color: #c97b84;
+    text-decoration: none;
+}
+
+.bio p a:hover {
+    text-decoration: underline;
+}
+
+.bio .contact {
+    margin-top: 30px;
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.bio .links {
+    margin-top: 10px;
+}
+
+.bio .links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bio .links a:hover {
+    color: #c97b84;
+}
+
+/* Intro text on research/projects pages */
+.intro-text {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/* Research & Project items */
+.research-item,
+.project-item {
+    margin-bottom: 40px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #f0ebe3;
+}
+
+.research-item:last-child,
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.research-item h2,
+.project-item h2 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.research-item .meta,
+.project-item .meta {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.research-item .meta a,
+.project-item .meta a {
+    color: #999;
+    text-decoration: none;
+}
+
+.research-item .meta a:hover,
+.project-item .meta a:hover {
+    color: #c97b84;
+}
+
+.research-item p,
+.project-item p {
+    color: #555;
+    font-size: 15px;
+}
+
+.research-item p a,
+.project-item p a {
+    color: #c97b84;
+    text-decoration: none;
+}
+
+.research-item p a:hover,
+.project-item p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 50px 25px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo-placeholder {
+        width: 110px;
+        height: 110px;
+        min-width: 110px;
+    }
+
+    nav a {
+        margin-right: 20px;
+    }
+}
