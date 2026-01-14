@@ -150,7 +150,7 @@ main h1 {
 
 .research-item .meta a,
 .project-item .meta a {
-    color: #999;
+    color: #c97b84;
     text-decoration: none;
 }
 
@@ -174,6 +174,17 @@ main h1 {
 .research-item p a:hover,
 .project-item p a:hover {
     text-decoration: underline;
+}
+
+.papers {
+    font-size: 14px;
+    color: #777;
+    margin-top: 12px;
+    line-height: 1.8;
+}
+
+.papers a {
+    color: #c97b84;
 }
 
 /* Responsive */
